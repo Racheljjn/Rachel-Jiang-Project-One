@@ -18,7 +18,7 @@ html{
   font-size: 62.5%;
 }
 h1{
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 h2,h3,a {
   font-weight: bold;
@@ -60,7 +60,7 @@ header{
 }
 .one{
   position: relative;
-  height: 60vh;
+  height: 70vh;
 }
 .hamIcon{
   float: right;
@@ -76,18 +76,19 @@ header{
 .one h1{
   clear: right;
   float: right;
-  width:100%;
+  width:30%;
   position: absolute;
-  left: 80px;
+  left: 30%;
   top: 80px;
 }
 .one img {
   height: auto;
-  min-height: 320px;
-  width: 50%;
+  min-height: 300px;
+  max-height: 400px;
+  width: 80%;
   float: left;
   position: absolute;
-  left: -80px;
+  left: -50px;
   bottom: 0;
 }
 .two{
@@ -199,6 +200,7 @@ h2,h4,
 .update{
   margin-top: 25px;
 }
+
 .button1 a,.button2 a{
   text-decoration: none;
   color: black;
@@ -232,13 +234,23 @@ footer h6{
   font-size: 1.2rem;
 }
 /* media queries */
-@media(min-width:350px){
+@media(min-width:450px){
  .one h1{
- width: 30%;
- left: 37%;  
+  font-size:5.5rem;
+  left: 50%; 
 } 
 }
-@media(min-width:560px){
+@media(min-width: 560px){
+  .one h1{
+    font-size: 6rem;
+  }
+  .one img{
+    max-height: 450px;
+    width: 65%;
+  }
+
+}
+@media(min-width:768px){
   .hamIcon{
     display: none;
   }
@@ -271,13 +283,14 @@ footer h6{
     font-size: 15px;
   }
   .one h1{
-    width:20%;
-    left: 250px;  
+    left: 50%;  
     top: 170px;
   }
   .one img{
     left: 0;   
-    width: 50%;  
+    width: 45%;
+    max-height: 450px;  
+    height: auto; 
   }
   .one img,.one h1,.icons{
     float: right;   
@@ -292,9 +305,7 @@ footer h6{
     width: 50%;
     float: right;
     padding: 40px;
-    height: 300px;
-    
-    
+    height: 300px;  
   }
   .wrapper h2{
     font-size: 25px;
@@ -306,8 +317,7 @@ footer h6{
   }
   .center{
     text-align: left;
-    padding: 5px;
-   
+    padding: 5px; 
   }
   .center a{
     font-size: 12px;
@@ -324,7 +334,6 @@ footer h6{
     float: right;
     padding: 40px;
     height: 300px;
-
   }
   .four{
     clear: both;
@@ -375,8 +384,8 @@ footer h6{
     text-align: center;
   }
   .six img{
-   margin: 10px;
-   width: calc(100% / 3 - 20px);
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
     float: left;
     height: 200px;
   }
@@ -386,8 +395,7 @@ footer h6{
   }
   .contact{
     float: left;
-    width: 30%;
-    
+    width: 30%; 
   }
   .contact p{
     line-height: 0.5rem;
@@ -412,16 +420,9 @@ footer h6{
     text-align: center;
     font-size: 12px;
   } 
-  .button1{
-    float: left;
-    width:27%;
-    height: 35px;
-    margin-left: 150px; 
-  }
-  .button2{
-    float: left;
-    width: 12%;
-    height: 35px;
+  .floated{
+    float: right;
+    width: 60%;
   }
   .button2 a{
     font-size: 10px;
@@ -430,9 +431,36 @@ footer h6{
     overflow: hidden;
   }
 }
-@media(min-width:800px){
-
-  
+@media(min-width:1000px){
+  .one{
+    height: 80vh;
+  }
+  .one h1{
+    font-size: 8rem;
+    top: 130px;
+  }
+  .one img{
+    width: 40%;
+    max-height: 600px;
+  }
+  .wrapper p{
+    font-size: 1.5rem;
+  }
+  .contact{
+    margin-left: 70px;  
+  }
+  .update{
+    width: 60%;
+  }
+  .button1{
+    float: left;
+    width:calc(70% - 120px);
+    margin-left: 120px;
+  }
+  .button2{
+    float: left;
+    width: 20%;
+  }
 }
 
 
